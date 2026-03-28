@@ -23,9 +23,16 @@ olympic-medal-predictor/
 
 🧠 Model Details
 
-PropertyValueAlgorithmLinear RegressionFeaturesathletes, prev_medalsTargetmedalsTrain setYears < 2012Test setYears >= 2012EvaluationMean Absolute Error (MAE)
+PropertyValueAlgorithmLinear
+
+RegressionFeaturesathletes
+
+prev_medalsTargetmedalsTrain
+
+setYears < 2012Test setYears >= 2012EvaluationMean Absolute Error (MAE)
 
 🚀 Getting Started
+
 1. Clone the repository
 bashgit clone https://github.com/YOUR_USERNAME/olympic-medal-predictor.git
 cd olympic-medal-predictor
