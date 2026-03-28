@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+.Python
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Model & data files (optional: remove if you want to track these)
+model.pkl
+*.csv
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
