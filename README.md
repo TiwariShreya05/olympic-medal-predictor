@@ -34,19 +34,31 @@ setYears < 2012Test setYears >= 2012EvaluationMean Absolute Error (MAE)
 🚀 Getting Started
 
 1. Clone the repository
+2. 
 bashgit clone https://github.com/YOUR_USERNAME/olympic-medal-predictor.git
+
 cd olympic-medal-predictor
-2. Install dependencies
+
+4. Install dependencies
+5. 
 bashpip install -r requirements.txt
-3. Add the dataset
+
+7. Add the dataset
+8. 
 Place your teams.csv file in the root of the project directory.
-4. Run the script
+
+10. Run the script
+11. 
 bashpython Medals.py
+
 This will:
 
 Train the model on pre-2012 data
+
 Evaluate on 2012+ data
+
 Print MAE and per-team error ratios
+
 Save the model as model.pkl
 
 
