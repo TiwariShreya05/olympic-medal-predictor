@@ -81,3 +81,11 @@ Save the model as model.pkl
 Predictions are clipped at 0 (no negative medals) and rounded to whole numbers
 Per-team error ratios are computed to identify which teams are hardest to predict
 Countries like USA and IND are spot-checked individually
+
+📬 Contact
+
+LinkedIn: https://www.linkedin.com/in/shreya-tiwari-520b692b3/
+
+Email: shreyatiwari0801@gmail.com
+
+GitHub: https://github.com/TiwariShreya05
