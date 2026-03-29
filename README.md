@@ -2,6 +2,12 @@
 
 A machine learning project that predicts the number of Olympic medals a country's team will win, using Linear Regression based on historical data.
 
+<img width="1172" height="628" alt="image" src="https://github.com/user-attachments/assets/c171bb49-c6de-4589-a62d-b0c138708761" />
+
+<img width="996" height="556" alt="image" src="https://github.com/user-attachments/assets/e62d8089-14a3-4e07-aa7d-ee4fcab71011" />
+
+<img width="833" height="442" alt="image" src="https://github.com/user-attachments/assets/efe8277b-4f87-43d2-87f8-43ad03821f3c" />
+
 📌 Project Overview
 
 This project analyzes Olympic team data and builds a predictive model using:
