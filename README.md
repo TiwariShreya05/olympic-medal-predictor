@@ -1,91 +1,140 @@
-🥇 Olympic Medal Predictor
+# 🥇 Olympic Medal Predictor
 
-A machine learning project that predicts the number of Olympic medals a country's team will win, using Linear Regression based on historical data.
+A machine learning project that predicts the number of Olympic medals a country's team will win, using **Linear Regression** trained on historical Olympic data.
 
-<img width="1172" height="628" alt="image" src="https://github.com/user-attachments/assets/c171bb49-c6de-4589-a62d-b0c138708761" />
+🌐 **[Live Demo → TiwariShreya05.github.io/olympic-medal-predictor](https://tiwariShreya05.github.io/olympic-medal-predictor)**
 
-<img width="996" height="556" alt="image" src="https://github.com/user-attachments/assets/e62d8089-14a3-4e07-aa7d-ee4fcab71011" />
+---
 
-<img width="833" height="442" alt="image" src="https://github.com/user-attachments/assets/efe8277b-4f87-43d2-87f8-43ad03821f3c" />
+## 📌 Project Overview
 
-<img width="981" height="430" alt="image" src="https://github.com/user-attachments/assets/4d77901a-5b70-4bf9-8077-f388580dc350" />
+This project analyzes Olympic team data and builds a predictive model using two key features:
 
-📌 Project Overview
+- **Number of athletes** sent by a country to the Olympics
+- **Previous medals** won by that country in prior Games
 
-This project analyzes Olympic team data and builds a predictive model using:
+The model is trained on data **before 2012** and evaluated on **2012 and later** years.
 
-Number of athletes sent by a country
+---
 
-Previous medals won by that country
+## 🌐 Web App
 
-The model is trained on data before 2012 and tested on 2012 and later years.
+The project is deployed as a fully interactive website on GitHub Pages — no installation required. Just open the link and start predicting!
 
-📁 Project Structure
+**Features of the web app:**
+- Sliders and number inputs for athletes and previous medals
+- Instant medal prediction with a visual meter
+- Estimated gold / silver / bronze breakdown
+- Quick-select presets for countries like USA, China, India, France
+- Works entirely in the browser — no backend needed
+
+---
+
+## 📁 Project Structure
+
+```
 olympic-medal-predictor/
-
 │
+├── index.html        # Deployed web app (GitHub Pages)
+├── Medals.py         # Main script: data prep, model training, evaluation
+├── app.py            # Streamlit app (local)
+├── teams.csv         # Dataset (Olympic team statistics)
+├── model.pkl         # Saved trained model (generated after running Medals.py)
+├── requirements.txt  # Python dependencies
+└── README.md         # Project documentation
+```
 
-├── Medals.py          # Main script: data prep, model training, evaluation
+---
 
-├── teams.csv          # Dataset (Olympic team statistics)
+## 🧠 Model Details
 
-├── model.pkl          # Saved trained model (generated after running)
+| Property    | Value                        |
+|-------------|------------------------------|
+| Algorithm   | Linear Regression            |
+| Features    | `athletes`, `prev_medals`    |
+| Target      | `medals`                     |
+| Train set   | Years < 2012                 |
+| Test set    | Years ≥ 2012                 |
+| Evaluation  | Mean Absolute Error (MAE)    |
 
-├── requirements.txt   # Python dependencies
+### How the prediction works
 
-└── README.md          # Project documentation
+The model learns a linear equation from historical data:
 
-🧠 Model Details
+```
+medals = intercept + (coef_athletes × athletes) + (coef_prev_medals × prev_medals)
+```
 
-PropertyValueAlgorithmLinear
+Approximate learned coefficients:
+- `intercept` ≈ -0.9
+- `coef_athletes` ≈ 0.02  → each additional athlete contributes ~0.02 medals
+- `coef_prev_medals` ≈ 0.72  → past performance is the strongest predictor
 
-RegressionFeaturesathletes
+Predictions are **clipped at 0** (no negative medals) and **rounded** to whole numbers.
 
-prev_medalsTargetmedalsTrain
+**Key insight:** Previous medals carry far more predictive weight (~0.72) than athlete count (~0.02), meaning a country's track record is the strongest signal of future performance.
 
-setYears < 2012Test setYears >= 2012EvaluationMean Absolute Error (MAE)
+---
 
-🚀 Getting Started
+## 🚀 Getting Started (Local)
 
-1. Clone the repository
-   
-bashgit clone https://github.com/TiwariShreya05/olympic-medal-predictor.git
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/TiwariShreya05/olympic-medal-predictor.git
 cd olympic-medal-predictor
+```
 
-2. Install dependencies
- 
-bashpip install -r requirements.txt
+### 2. Install dependencies
 
-3. Add the dataset
-   
-Place your teams.csv file in the root of the project directory.
+```bash
+pip install -r requirements.txt
+```
 
-4. Run the script
+### 3. Add the dataset
 
-bashpython Medals.py
+Place your `teams.csv` file in the root of the project directory.
+
+### 4. Train the model
+
+```bash
+python Medals.py
+```
 
 This will:
+- Train the model on pre-2012 data
+- Evaluate on 2012+ data
+- Print MAE and per-team error ratios
+- Save the model as `model.pkl`
 
-Train the model on pre-2012 data
+### 5. Run the Streamlit app (optional)
 
-Evaluate on 2012+ data
+```bash
+streamlit run app.py
+```
 
-Print MAE and per-team error ratios
+---
 
-Save the model as model.pkl
+## 📊 Sample Results
 
+- Predictions are clipped at 0 and rounded to whole numbers
+- Per-team error ratios identify which countries are hardest to predict
+- Countries like USA and IND are spot-checked individually
 
-📊 Sample Results
+---
 
-Predictions are clipped at 0 (no negative medals) and rounded to whole numbers
-Per-team error ratios are computed to identify which teams are hardest to predict
-Countries like USA and IND are spot-checked individually
+## 🛠 Tech Stack
 
-📬 Contact
+- **Python** — data processing and model training
+- **scikit-learn** — Linear Regression
+- **pandas / numpy** — data manipulation
+- **Streamlit** — local web app
+- **HTML / CSS / JS** — deployed GitHub Pages version (no dependencies)
 
-LinkedIn: https://www.linkedin.com/in/shreya-tiwari-520b692b3/
+---
 
-Email: shreyatiwari0801@gmail.com
+## 📬 Contact
 
-GitHub: https://github.com/TiwariShreya05
+- 💼 LinkedIn: [linkedin.com/in/shreya-tiwari-520b692b3](https://www.linkedin.com/in/shreya-tiwari-520b692b3/)
+- 📧 Email: shreyatiwari0801@gmail.com
+- 🐙 GitHub: [github.com/TiwariShreya05](https://github.com/TiwariShreya05)
