@@ -8,6 +8,8 @@ A machine learning project that predicts the number of Olympic medals a country'
 
 <img width="833" height="442" alt="image" src="https://github.com/user-attachments/assets/efe8277b-4f87-43d2-87f8-43ad03821f3c" />
 
+<img width="981" height="430" alt="image" src="https://github.com/user-attachments/assets/4d77901a-5b70-4bf9-8077-f388580dc350" />
+
 📌 Project Overview
 
 This project analyzes Olympic team data and builds a predictive model using:
