@@ -14,11 +14,17 @@ The model is trained on data before 2012 and tested on 2012 and later years.
 
 📁 Project Structure
 olympic-medal-predictor/
+
 │
+
 ├── Medals.py          # Main script: data prep, model training, evaluation
+
 ├── teams.csv          # Dataset (Olympic team statistics)
+
 ├── model.pkl          # Saved trained model (generated after running)
+
 ├── requirements.txt   # Python dependencies
+
 └── README.md          # Project documentation
 
 🧠 Model Details
