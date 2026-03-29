@@ -49,7 +49,7 @@ setYears < 2012Test setYears >= 2012EvaluationMean Absolute Error (MAE)
 
 1. Clone the repository
    
-bashgit clone https://github.com/YOUR_USERNAME/olympic-medal-predictor.git
+bashgit clone https://github.com/TiwariShreya05/olympic-medal-predictor.git
 
 cd olympic-medal-predictor
 
