@@ -15,7 +15,7 @@ This project analyzes Olympic team data and builds a predictive model using two 
 
 The model is trained on data **before 2012** and evaluated on **2012 and later** years.
   
----  
+---   
 
 ## 🌐 Web App
    
