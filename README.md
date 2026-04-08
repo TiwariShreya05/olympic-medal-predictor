@@ -21,7 +21,7 @@ The model is trained on data **before 2012** and evaluated on **2012 and later**
    
 The project is deployed as a fully interactive website on GitHub Pages — no installation required. Just open the link and start predicting!
 
-**Features of the web app:**
+**Features of the web app:**  
 - Sliders and number inputs for athletes and previous medals
 - Instant medal prediction with a visual meter
 - Estimated gold / silver / bronze breakdown
