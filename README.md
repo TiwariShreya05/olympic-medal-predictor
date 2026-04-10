@@ -69,7 +69,7 @@ Approximate learned coefficients:
 - `intercept` ≈ -0.9
 - `coef_athletes` ≈ 0.02  → each additional athlete contributes ~0.02 medals
 - `coef_prev_medals` ≈ 0.72  → past performance is the strongest predictor
-
+   
 Predictions are **clipped at 0** (no negative medals) and **rounded** to whole numbers.
 
 **Key insight:** Previous medals carry far more predictive weight (~0.72) than athlete count (~0.02), meaning a country's track record is the strongest signal of future performance.
