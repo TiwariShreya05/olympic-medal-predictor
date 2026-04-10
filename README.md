@@ -36,7 +36,7 @@ The project is deployed as a fully interactive website on GitHub Pages — no in
 olympic-medal-predictor/
 │
 ├── index.html        # Deployed web app (GitHub Pages)
-├── Medals.py         # Main script: data prep, model training, evaluation
+├── Medals.py         # Main script: data prep, model training, evaluation  
 ├── app.py            # Streamlit app (local)
 ├── teams.csv         # Dataset (Olympic team statistics)
 ├── model.pkl         # Saved trained model (generated after running Medals.py)
