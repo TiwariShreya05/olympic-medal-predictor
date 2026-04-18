@@ -13,7 +13,7 @@ This project analyzes Olympic team data and builds a predictive model using two 
 - **Number of athletes** sent by a country to the Olympics        
 - **Previous medals** won by that country in prior Games  
 
-The model is trained on data **before 2012** and evaluated on **2012 and later** years.
+The model is trained on data **before 2012** and evaluated on **2012 and later** year
             
 ---        
 
