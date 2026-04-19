@@ -16,7 +16,7 @@ This project analyzes Olympic team data and builds a predictive model using two 
 The model is trained on data **before 2012** and evaluated on **2012 and later** years.
             
 ---        
-
+    
 ## 🌐 Web App   
    
 The project is deployed as a fully interactive website on GitHub Pages — no installation required. Just open the link and start predicting!
