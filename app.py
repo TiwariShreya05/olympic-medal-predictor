@@ -16,7 +16,7 @@ def load_model():
         return pickle.load(f)
 
 model = load_model()
-
+   
 # ---------- UI ----------
 st.title("🥇 Olympic Medal Predictor")
 st.markdown("Predict how many Olympic medals a country's team will win based on their squad size and past performance.")
