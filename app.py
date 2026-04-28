@@ -6,7 +6,7 @@ import numpy as np
 st.set_page_config(
     page_title="Olympic Medal Predictor",
     page_icon="🥇",
-    layout="centered"
+    layout="centered"   
 )
 
 # ---------- Load Model ----------
