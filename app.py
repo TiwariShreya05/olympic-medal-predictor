@@ -11,7 +11,7 @@ st.set_page_config(
 
 # ---------- Load Model ----------
 @st.cache_resource
-def load_model():
+def load_model():   
     with open("model.pkl", "rb") as f:
         return pickle.load(f)
 
