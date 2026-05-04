@@ -5,7 +5,7 @@ A machine learning project that predicts the number of Olympic medals a country'
 🌐 **[Live Demo →   TiwariShreya05.github.io/olympic-medal-predictor](https://tiwariShreya05.github.io/olympic-medal-predictor)**  
 
 ---       
- 
+  
 ## 📌 Project Overview   
  
 This project analyzes Olympic team data and builds a predictive model using two key features: 
