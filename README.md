@@ -1,6 +1,6 @@
 # 🥇 Olympic Medal Predictor
 
-A machine learning project that predicts the number of Olympic medals a country's team will win, using **Linear Regression** trained on historical Olympic data.     
+A machine learning project that predicts the number of Olympic medals a country's team will win, using **Linear Regression** trained on historical Olympic data.      
 
 🌐 **[Live Demo →   TiwariShreya05.github.io/olympic-medal-predictor](https://tiwariShreya05.github.io/olympic-medal-predictor)**  
 
